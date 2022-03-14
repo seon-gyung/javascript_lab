@@ -37,7 +37,7 @@
 
         async function numberFetch() {
             let response = await fetch("http://localhost:8080/number"); // 10초
-            let responseParse = await response.json();
+            let responseParse = await response.json(); // JSON 데이터를 JavaScript로 변환
 
             let numberBoxDom = document.querySelector("#number-box");
             for (let i of responseParse) {
